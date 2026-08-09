@@ -1,33 +1,51 @@
 fetch("Noticias.json")
-  .then(response => response.json())
-  .then(data => {
+.then(response => response.json())
+.then(data => {
 
-    const contenedor = document.getElementById("contenedor-noticias");
+const contenedor = document.getElementById("contenedor-noticias");
 
-    contenedor.innerHTML = "";
+contenedor.innerHTML = '<div class="noticias-grid"></div>';
 
-    data.forEach(noticia => {
+const grid = contenedor.querySelector(".noticias-grid");
 
-      contenedor.innerHTML += `
-        <article class="card-noticia">
+data.forEach(noticia => {
 
-          <div class="categoria">
-            ${noticia.fuente} • ${noticia.categoria}
-          </div>
+grid.innerHTML += `
 
-          <h3>${noticia.titulo}</h3>
+<article class="noticia">
 
-          <p>${noticia.descripcion}</p>
+    <div class="noticia-contenido">
 
-          <a href="${noticia.url}" target="_blank">
-            Leer noticia →
-          </a>
+        <div class="fecha">
+            ${noticia.fuente}
+        </div>
 
-        </article>
-      `;
-    });
+        <h2>
+            ${noticia.titulo}
+        </h2>
 
-  })
-  .catch(error => {
-    console.error("Error cargando noticias:", error);
-  });
+        <p>
+            ${noticia.descripcion}
+        </p>
+
+        <a
+            href="${noticia.url}"
+            target="_blank"
+            class="leer-mas"
+        >
+            Leer noticia
+            <span>→</span>
+        </a>
+
+    </div>
+
+</article>
+
+`;
+
+});
+
+})
+.catch(error => {
+console.error("Error cargando noticias:", error);
+});
