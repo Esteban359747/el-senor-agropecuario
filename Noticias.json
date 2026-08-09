@@ -4,6 +4,7 @@
     "descripcion": "Información reciente sobre sanidad animal, vacunación y actualidad de la ganadería colombiana.",
     "categoria": "Ganadería",
     "fuente": "FEDEGÁN",
+    "imagen": "img/imagen1.png",
     "url": "https://www.fedegan.org.co"
   },
   {
@@ -11,6 +12,7 @@
     "descripcion": "Actualidad, negocios, mercados y oportunidades para el sector agropecuario colombiano.",
     "categoria": "Agricultura",
     "fuente": "Agronegocios",
+    "imagen": "img/imagen2.png",
     "url": "https://www.agronegocios.co"
   },
   {
@@ -18,6 +20,7 @@
     "descripcion": "Conoce información relacionada con agricultura, ganadería, mercados y desarrollo rural.",
     "categoria": "Actualidad",
     "fuente": "MinAgricultura",
+    "imagen": "img/imagen3.png",
     "url": "https://www.minagricultura.gov.co"
   }
 ]
