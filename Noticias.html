@@ -5,10 +5,7 @@
 
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Noticias | El Señor Agropecuario</title>
 
@@ -16,9 +13,7 @@
 
 </head>
 
-
 <body>
-
 
 <section class="noticias">
 
@@ -26,12 +21,9 @@
 
         <div class="noticias-contenido">
 
+            <div class="titulo-seccion">
 
-            <!-- ENCABEZADO -->
-
-            <header class="noticias-header">
-
-                <span class="etiqueta">
+                <span class="etiqueta-principal">
                     🌱 EL SEÑOR AGROPECUARIO
                 </span>
 
@@ -39,179 +31,17 @@
                     Noticias del campo
                 </h1>
 
-                <div class="linea-decorativa"></div>
+                <div class="linea"></div>
 
-                <p>
-                    Información, actualidad y novedades
-                    del sector agropecuario colombiano.
+                <p class="descripcion-principal">
+                    Información, actualidad y novedades del sector agropecuario colombiano.
                 </p>
-
-            </header>
-
-
-            <!-- NOTICIAS -->
-
-            <div class="noticias-grid">
-
-
-                <!-- NOTICIA 1 -->
-
-                <article class="noticia">
-
-                    <div class="noticia-imagen">
-
-                        <img
-                            src="imagenes/imagen1.png"
-                            alt="Noticias del sector agropecuario"
-                        >
-
-                        <span class="categoria">
-                            🌾 Agricultura
-                        </span>
-
-                    </div>
-
-
-                    <div class="noticia-contenido">
-
-                        <span class="fecha">
-                            Actualidad del campo
-                        </span>
-
-                        <h2>
-                            El campo colombiano
-                            sigue creciendo
-                        </h2>
-
-                        <p>
-                            Conoce las principales novedades,
-                            oportunidades y avances que están
-                            transformando el sector agropecuario
-                            colombiano.
-                        </p>
-
-                        <a href="#" class="leer-mas">
-                            Leer noticia
-                            <span>→</span>
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- NOTICIA 2 -->
-
-                <article class="noticia">
-
-                    <div class="noticia-imagen">
-
-                        <img
-                            src="imagenes/imagen2.png"
-                            alt="Innovación agropecuaria en Colombia"
-                        >
-
-                        <span class="categoria">
-                            🚜 Innovación
-                        </span>
-
-                    </div>
-
-
-                    <div class="noticia-contenido">
-
-                        <span class="fecha">
-                            Tecnología agropecuaria
-                        </span>
-
-                        <h2>
-                            Tecnología para
-                            transformar el campo
-                        </h2>
-
-                        <p>
-                            Nuevas herramientas y tecnologías
-                            ayudan a los productores a mejorar
-                            sus procesos y hacer más eficiente
-                            la producción.
-                        </p>
-
-                        <a href="#" class="leer-mas">
-                            Leer noticia
-                            <span>→</span>
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- NOTICIA 3 -->
-
-                <article class="noticia">
-
-                    <div class="noticia-imagen">
-
-                        <img
-                            src="imagenes/imagen3.png"
-                            alt="Producción sostenible en Colombia"
-                        >
-
-                        <span class="categoria">
-                            🌱 Sostenibilidad
-                        </span>
-
-                    </div>
-
-
-                    <div class="noticia-contenido">
-
-                        <span class="fecha">
-                            Campo sostenible
-                        </span>
-
-                        <h2>
-                            Hacia una agricultura
-                            más sostenible
-                        </h2>
-
-                        <p>
-                            Prácticas responsables permiten
-                            producir alimentos mientras se
-                            protege el suelo, el agua y los
-                            recursos naturales.
-                        </p>
-
-                        <a href="#" class="leer-mas">
-                            Leer noticia
-                            <span>→</span>
-                        </a>
-
-                    </div>
-
-                </article>
-
 
             </div>
 
+            <!-- AQUÍ SE CARGARÁN LAS NOTICIAS AUTOMÁTICAMENTE -->
 
-            <!-- FRASE FINAL -->
-
-            <div class="noticias-final">
-
-                <span>🌾</span>
-
-                <p>
-                    <em>
-                        Información que conecta al campo
-                        colombiano con nuevas oportunidades.
-                    </em>
-                </p>
-
-                <span>🌾</span>
-
-            </div>
-
+            <div id="contenedor-noticias" class="contenedor-noticias"></div>
 
         </div>
 
@@ -220,6 +50,7 @@
 </section>
 
 <script src="Noticias.js"></script>
+
 </body>
 
 </html>
