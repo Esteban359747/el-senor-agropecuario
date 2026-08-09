@@ -14,6 +14,19 @@ grid.innerHTML += `
 
 <article class="noticia">
 
+    <div class="noticia-imagen">
+
+        <img
+            src="${noticia.imagen}"
+            alt="${noticia.titulo}"
+        >
+
+        <div class="categoria">
+            ${noticia.categoria}
+        </div>
+
+    </div>
+
     <div class="noticia-contenido">
 
         <div class="fecha">
