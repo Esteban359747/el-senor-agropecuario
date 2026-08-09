@@ -6,6 +6,7 @@
     <title>El Señor Agropecuario</title>
 
     <style>
+
         *{
             margin:0;
             padding:0;
@@ -59,6 +60,38 @@
             font-size:22px;
         }
 
+        .secciones{
+            max-width:1200px;
+            margin:40px auto;
+            padding:20px;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            border-radius:15px;
+            padding:25px;
+            text-align:center;
+            box-shadow:0 5px 15px rgba(0,0,0,.1);
+        }
+
+        .card h2{
+            color:#1b5e20;
+            margin-bottom:15px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:15px;
+            background:#2e7d32;
+            color:white;
+            text-decoration:none;
+            padding:10px 20px;
+            border-radius:8px;
+        }
+
         footer{
             background:#1b5e20;
             color:white;
@@ -66,32 +99,61 @@
             padding:20px;
             margin-top:40px;
         }
+
     </style>
 </head>
 
 <body>
 
 <header>
-    <h1>🌱 EL SEÑOR AGROPECUARIO</h1>
-    <p>El conocimiento que impulsa el campo colombiano</p>
+    <h1>🌱 El Señor Agropecuario</h1>
+    <p>Información, empleo y actualidad del campo colombiano</p>
 </header>
 
 <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Noticias</a>
-    <a href="#">Empleo</a>
-    <a href="#">Agricultura</a>
-    <a href="#">Ganadería</a>
-    <a href="#">Contacto</a>
+    <a href="index.html">Inicio</a>
+    <a href="Noticias.html">Noticias</a>
+    <a href="Empleo.html">Empleo</a>
+    <a href="Agricultura.html">Agricultura</a>
+    <a href="Ganaderia.html">Ganadería</a>
+    <a href="Contacto.html">Contacto</a>
 </nav>
 
 <section class="hero">
-    <h1>Bienvenido</h1>
-    <p>La plataforma digital del agro colombiano.</p>
+    <h1>Bienvenidos</h1>
+    <p>El portal del agro colombiano</p>
+</section>
+
+<section class="secciones">
+
+    <div class="card">
+        <h2>📰 Noticias</h2>
+        <p>Las noticias más importantes del sector agropecuario.</p>
+        <a href="Noticias.html" class="btn">Ver noticias</a>
+    </div>
+
+    <div class="card">
+        <h2>💼 Empleo</h2>
+        <p>Oportunidades laborales para profesionales del agro.</p>
+        <a href="Empleo.html" class="btn">Ver empleos</a>
+    </div>
+
+    <div class="card">
+        <h2>🌾 Agricultura</h2>
+        <p>Información técnica y tendencias agrícolas.</p>
+        <a href="Agricultura.html" class="btn">Ingresar</a>
+    </div>
+
+    <div class="card">
+        <h2>🐄 Ganadería</h2>
+        <p>Actualidad y tecnología para la producción ganadera.</p>
+        <a href="Ganaderia.html" class="btn">Ingresar</a>
+    </div>
+
 </section>
 
 <footer>
-    <p>© 2026 El Señor Agropecuario - Todos los derechos reservados.</p>
+    © 2026 El Señor Agropecuario - Todos los derechos reservados
 </footer>
 
 </body>
