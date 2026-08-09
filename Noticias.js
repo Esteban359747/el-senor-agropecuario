@@ -1,64 +1,47 @@
 fetch("Noticias.json")
-.then(response => response.json())
-.then(data => {
+  .then(response => response.json())
+  .then(data => {
 
-const contenedor = document.getElementById("contenedor-noticias");
+    const contenedor = document.getElementById("contenedor-noticias");
 
-contenedor.innerHTML = '<div class="noticias-grid"></div>';
+    contenedor.innerHTML = '<div class="noticias-grid"></div>';
 
-const grid = contenedor.querySelector(".noticias-grid");
+    const grid = document.querySelector(".noticias-grid");
 
-data.forEach(noticia => {
+    data.forEach(noticia => {
 
-grid.innerHTML += `
+      grid.innerHTML += `
 
-<article class="noticia">
+      <article class="noticia">
 
-    <div class="noticia-imagen">
+          <div class="noticia-contenido">
 
-        <img
-            src="${noticia.imagen}"
-            alt="${noticia.titulo}"
-        >
+              <div class="fecha">
+                  ${noticia.fuente}
+              </div>
 
-        <div class="categoria">
-            ${noticia.categoria}
-        </div>
+              <h2>${noticia.titulo}</h2>
 
-    </div>
+              <p>${noticia.descripcion}</p>
 
-    <div class="noticia-contenido">
+              <a
+                  href="${noticia.url}"
+                  target="_blank"
+                  class="leer-mas"
+              >
+                  Leer noticia
+                  <span>→</span>
+              </a>
 
-        <div class="fecha">
-            ${noticia.fuente}
-        </div>
+          </div>
 
-        <h2>
-            ${noticia.titulo}
-        </h2>
+      </article>
 
-        <p>
-            ${noticia.descripcion}
-        </p>
+      `;
 
-        <a
-            href="${noticia.url}"
-            target="_blank"
-            class="leer-mas"
-        >
-            Leer noticia
-            <span>→</span>
-        </a>
+    });
 
-    </div>
-
-</article>
-
-`;
-
-});
-
-})
-.catch(error => {
-console.error("Error cargando noticias:", error);
-});
+  })
+  .catch(error => {
+    console.error("Error cargando noticias:", error);
+  });
