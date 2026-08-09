@@ -1,0 +1,23 @@
+[
+  {
+    "titulo": "FEDEGÁN mantiene actualizadas las noticias del sector ganadero",
+    "descripcion": "Información reciente sobre sanidad animal, vacunación y actualidad de la ganadería colombiana.",
+    "categoria": "Ganadería",
+    "fuente": "FEDEGÁN",
+    "url": "https://www.fedegan.org.co"
+  },
+  {
+    "titulo": "Las noticias y tendencias más importantes del agro colombiano",
+    "descripcion": "Actualidad, negocios, mercados y oportunidades para el sector agropecuario colombiano.",
+    "categoria": "Agricultura",
+    "fuente": "Agronegocios",
+    "url": "https://www.agronegocios.co"
+  },
+  {
+    "titulo": "Nuevas noticias del campo colombiano",
+    "descripcion": "Conoce información relacionada con agricultura, ganadería, mercados y desarrollo rural.",
+    "categoria": "Actualidad",
+    "fuente": "MinAgricultura",
+    "url": "https://www.minagricultura.gov.co"
+  }
+]
