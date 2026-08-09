@@ -1,72 +1,1349 @@
-/* =========================
-   SECCIÓN NOTICIAS
-========================= */
 
-.noticias{
-    background:#f5f5f5;
-    padding:80px 20px;
+/* IMÁGENES DE AGRICULTURA */
+
+.contenido-agricultura {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
-.noticias h2{
-    text-align:center;
-    font-size:36px;
-    color:#2e7d32;
-    margin-bottom:10px;
+.tarjeta-agricultura {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.subtitulo{
-    text-align:center;
-    color:#666;
-    margin-bottom:40px;
+.tarjeta-agricultura img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
 }
 
-.contenedor-noticias{
-    display:flex;
-    gap:30px;
-    justify-content:center;
-    flex-wrap:wrap;
+.tarjeta-agricultura h3,
+.tarjeta-agricultura p,
+.tarjeta-agricultura a {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.card-noticia{
-    width:330px;
-    background:#fff;
-    border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-    transition:.3s;
+.tarjeta-agricultura h3 {
+    margin-top: 20px;
 }
 
-.card-noticia:hover{
-    transform:translateY(-8px);
+.tarjeta-agricultura p {
+    line-height: 1.6;
 }
 
-.card-noticia img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
+.boton-agricultura {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 18px;
+    background: #277a2b;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
 }
 
-.card-noticia h3{
-    padding:15px;
-    color:#2e7d32;
+@media (max-width: 800px) {
+    .contenido-agricultura {
+        grid-template-columns: 1fr;
+    }
+}
+/* ===== IMÁGENES DENTRO DE LAS TARJETAS ===== */
+
+.tarjeta-agricultura {
+    overflow: hidden;
+}
+/* ===== IMÁGENES DENTRO DE LAS TARJETAS ===== */
+
+.tarjeta-agricultura {
+    overflow: hidden;
+}
+/* ===== IMÁGENES DENTRO DE LAS TARJETAS ===== */
+
+.tarjeta-agricultura {
+    overflow: hidden;
+}
+/* ===== IMÁGENES DENTRO DE LAS TARJETAS ===== */
+
+.tarjeta-agricultura {
+    overflow: hidden;
 }
 
-.card-noticia p{
-    padding:0 15px 20px;
-    color:#555;
-    line-height:1.6;
+.tarjeta-agricultura img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+/* =========================================================
+   EL SEÑOR AGROPECUARIO
+   SECCIÓN DE CONTACTO
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   CONFIGURACIÓN GENERAL
+   --------------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
 }
 
-.card-noticia a{
-    display:inline-block;
-    margin:0 15px 20px;
-    padding:10px 20px;
-    background:#2e7d32;
-    color:#fff;
-    text-decoration:none;
-    border-radius:6px;
+html {
+    scroll-behavior: smooth;
 }
 
-.card-noticia a:hover{
-    background:#1b5e20;
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+/* ---------------------------------------------------------
+   SECCIÓN CONTACTO
+   --------------------------------------------------------- */
+
+.contacto {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    padding: 80px 20px;
+
+    background-image:
+        linear-gradient(
+            rgba(25, 60, 30, 0.68),
+            rgba(18, 45, 23, 0.78)
+        ),
+        url("imagenes/campo-colombiano.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+}
+
+
+/* ---------------------------------------------------------
+   CAPA DE FONDO
+   --------------------------------------------------------- */
+
+.contacto-overlay {
+
+    width: 100%;
+
+    min-height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+/* ---------------------------------------------------------
+   CONTENIDO
+   --------------------------------------------------------- */
+
+.contacto-contenido {
+
+    width: 100%;
+
+    max-width: 1150px;
+
+    margin: auto;
+
+}
+
+
+/* ---------------------------------------------------------
+   ENCABEZADO
+   --------------------------------------------------------- */
+
+.contacto-header {
+
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 45px;
+
+}
+
+
+.etiqueta {
+
+    display: inline-block;
+
+    padding: 8px 20px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid rgba(255,255,255,0.45);
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(5px);
+
+    color: #e8d39a;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.contacto-header h1 {
+
+    margin: 0;
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(42px, 6vw, 68px);
+
+    font-weight: 700;
+
+    text-shadow:
+        0 4px 15px rgba(0,0,0,0.35);
+
+}
+
+
+.linea-decorativa {
+
+    width: 80px;
+
+    height: 4px;
+
+    margin: 18px auto;
+
+    border-radius: 10px;
+
+    background: #d7b866;
+
+}
+
+
+.contacto-header p {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: rgba(255,255,255,0.92);
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ---------------------------------------------------------
+   TARJETAS DE CONTACTO
+   --------------------------------------------------------- */
+
+.contacto-datos {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 45px;
+
+}
+
+
+.dato {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    min-height: 105px;
+
+    padding: 20px;
+
+    border:
+
+        1px solid
+        rgba(255,255,255,0.35);
+
+    border-radius: 18px;
+
+    background:
+        rgba(255,255,255,0.94);
+
+    box-shadow:
+        0 12px 30px
+        rgba(0,0,0,0.18);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.dato:hover {
+
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 18px 38px
+        rgba(0,0,0,0.28);
+
+}
+
+
+.dato-icono {
+
+    flex-shrink: 0;
+
+    width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #315b32;
+
+    color: white;
+
+    font-size: 21px;
+
+}
+
+
+.dato-texto h3 {
+
+    margin: 0 0 6px;
+
+    color: #315b32;
+
+    font-size: 14px;
+
+}
+
+
+.dato-texto a,
+.dato-texto p {
+
+    margin: 0;
+
+    color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    text-decoration: none;
+
+    word-break: break-word;
+
+}
+
+
+.dato-texto a:hover {
+
+    color: #315b32;
+
+}
+
+
+/* ---------------------------------------------------------
+   FORMULARIO
+   --------------------------------------------------------- */
+
+.formulario {
+
+    position: relative;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 45px 50px;
+
+    background:
+        rgba(255,255,255,0.97);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 25px 60px
+        rgba(0,0,0,0.28);
+
+    overflow: hidden;
+
+}
+
+
+/* ---------------------------------------------------------
+   DETALLE SUPERIOR
+   --------------------------------------------------------- */
+
+.formulario::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 6px;
+
+    background: #315b32;
+
+}
+
+
+/* ---------------------------------------------------------
+   CABECERA FORMULARIO
+   --------------------------------------------------------- */
+
+.formulario-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+}
+
+
+.formulario-icono {
+
+    width: 58px;
+
+    height: 58px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: #315b32;
+
+    color: white;
+
+    font-size: 25px;
+
+}
+
+
+.formulario-header span {
+
+    color: #927941;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.formulario-header h2 {
+
+    margin: 5px 0 0;
+
+    color: #315b32;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+}
+
+
+.formulario-intro {
+
+    margin: 20px 0 30px 75px;
+
+    color: #707070;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+}
+
+
+/* ---------------------------------------------------------
+   FILAS
+   --------------------------------------------------------- */
+
+.fila-formulario {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+/* ---------------------------------------------------------
+   CAMPOS
+   --------------------------------------------------------- */
+
+.campo {
+
+    margin-bottom: 21px;
+
+}
+
+
+.campo label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #315b32;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+.campo input,
+.campo textarea {
+
+    width: 100%;
+
+    padding: 15px 17px;
+
+    border:
+
+        1px solid
+        #d9d9d3;
+
+    border-radius: 11px;
+
+    background: #f8f8f5;
+
+    color: #333;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.campo input {
+
+    height: 52px;
+
+}
+
+
+.campo textarea {
+
+    min-height: 140px;
+
+    resize: vertical;
+
+    line-height: 1.6;
+
+}
+
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+
+    color: #999;
+
+}
+
+
+.campo input:focus,
+.campo textarea:focus {
+
+    border-color: #5d8d48;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(93,141,72,0.10);
+
+}
+
+
+/* ---------------------------------------------------------
+   BOTÓN
+   --------------------------------------------------------- */
+
+.btn-enviar {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    padding: 16px 25px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #315b32;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.4px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.btn-enviar:hover {
+
+    background: #4d7c40;
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(49,91,50,0.30);
+
+}
+
+
+.btn-enviar strong {
+
+    font-size: 22px;
+
+    transition:
+        transform 0.3s ease;
+
+}
+
+
+.btn-enviar:hover strong {
+
+    transform:
+        translateX(6px);
+
+}
+
+
+/* ---------------------------------------------------------
+   FRASE FINAL
+   --------------------------------------------------------- */
+
+.contacto-final {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 38px;
+
+    color: rgba(255,255,255,0.88);
+
+    text-align: center;
+
+}
+
+
+.contacto-final span {
+
+    color: #d7b866;
+
+    font-size: 20px;
+
+}
+
+
+.contacto-final p {
+
+    margin: 0;
+
+    font-size: 15px;
+
+}
+
+
+/* ---------------------------------------------------------
+   TABLET
+   --------------------------------------------------------- */
+
+@media (max-width: 950px) {
+
+    .contacto-datos {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   CELULAR
+   --------------------------------------------------------- */
+
+@media (max-width: 650px) {
+
+    .contacto {
+
+        padding: 55px 15px;
+
+        background-attachment: scroll;
+
+    }
+
+
+    .contacto-header h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .contacto-header p {
+
+        font-size: 15px;
+
+    }
+
+
+    .contacto-datos {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .dato {
+
+        min-height: 90px;
+
+    }
+
+
+    .formulario {
+
+        padding: 38px 22px;
+
+        border-radius: 20px;
+
+    }
+
+
+    .formulario-header h2 {
+
+        font-size: 25px;
+
+    }
+
+
+    .formulario-intro {
+
+        margin: 18px 0 28px;
+
+    }
+
+
+    .fila-formulario {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+    }
+
+
+    .contacto-final {
+
+        flex-direction: column;
+
+        gap: 5px;
+
+    }
+
+}
+/* =========================================================
+   EL SEÑOR AGROPECUARIO
+   PÁGINA DE NOTICIAS
+   ========================================================= */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+}
+
+
+/* =========================================================
+   FONDO PRINCIPAL
+   ========================================================= */
+
+.noticias {
+
+    min-height: 100vh;
+
+    padding: 80px 20px;
+
+    background-image:
+
+        linear-gradient(
+            rgba(25, 60, 30, 0.72),
+            rgba(18, 45, 23, 0.82)
+        ),
+
+        url("imagenes/imagen1.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+}
+
+
+/* =========================================================
+   CONTENEDOR
+   ========================================================= */
+
+.noticias-overlay {
+
+    width: 100%;
+
+}
+
+
+.noticias-contenido {
+
+    width: 100%;
+
+    max-width: 1150px;
+
+    margin: auto;
+
+}
+
+
+/* =========================================================
+   ENCABEZADO
+   ========================================================= */
+
+.noticias-header {
+
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 50px;
+
+}
+
+
+.etiqueta {
+
+    display: inline-block;
+
+    padding: 8px 20px;
+
+    margin-bottom: 18px;
+
+    border:
+
+        1px solid
+        rgba(255,255,255,0.45);
+
+    border-radius: 30px;
+
+    background:
+        rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(5px);
+
+    color: #e8d39a;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.noticias-header h1 {
+
+    margin: 0;
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(42px, 6vw, 68px);
+
+    text-shadow:
+        0 4px 15px
+        rgba(0,0,0,0.35);
+
+}
+
+
+.linea-decorativa {
+
+    width: 80px;
+
+    height: 4px;
+
+    margin: 18px auto;
+
+    border-radius: 10px;
+
+    background: #d7b866;
+
+}
+
+
+.noticias-header p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    color:
+        rgba(255,255,255,0.92);
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   GRID DE NOTICIAS
+   ========================================================= */
+
+.noticias-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 28px;
+
+}
+
+
+/* =========================================================
+   TARJETA
+   ========================================================= */
+
+.noticia {
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 18px 45px
+        rgba(0,0,0,0.25);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+
+}
+
+
+.noticia:hover {
+
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 25px 55px
+        rgba(0,0,0,0.35);
+
+}
+
+
+/* =========================================================
+   IMAGEN
+   ========================================================= */
+
+.noticia-imagen {
+
+    position: relative;
+
+    height: 240px;
+
+    overflow: hidden;
+
+}
+
+
+.noticia-imagen img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease;
+
+}
+
+
+.noticia:hover
+.noticia-imagen img {
+
+    transform:
+        scale(1.08);
+
+}
+
+
+/* =========================================================
+   CATEGORÍA
+   ========================================================= */
+
+.categoria {
+
+    position: absolute;
+
+    bottom: 15px;
+
+    left: 15px;
+
+    padding: 8px 14px;
+
+    border-radius: 30px;
+
+    background:
+        rgba(49,91,50,0.94);
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    backdrop-filter: blur(5px);
+
+}
+
+
+/* =========================================================
+   CONTENIDO DE NOTICIA
+   ========================================================= */
+
+.noticia-contenido {
+
+    padding: 28px;
+
+}
+
+
+.fecha {
+
+    color: #927941;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+
+.noticia-contenido h2 {
+
+    margin:
+        10px 0 14px;
+
+    color: #315b32;
+
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+
+    line-height: 1.25;
+
+}
+
+
+.noticia-contenido p {
+
+    margin: 0 0 22px;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   LEER MÁS
+   ========================================================= */
+
+.leer-mas {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #315b32;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease;
+
+}
+
+
+.leer-mas span {
+
+    font-size: 20px;
+
+    transition:
+        transform 0.3s ease;
+
+}
+
+
+.leer-mas:hover {
+
+    color: #6c914e;
+
+}
+
+
+.leer-mas:hover span {
+
+    transform:
+        translateX(6px);
+
+}
+
+
+/* =========================================================
+   FRASE FINAL
+   ========================================================= */
+
+.noticias-final {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 45px;
+
+    color:
+        rgba(255,255,255,0.9);
+
+    text-align: center;
+
+}
+
+
+.noticias-final span {
+
+    color: #d7b866;
+
+    font-size: 20px;
+
+}
+
+
+.noticias-final p {
+
+    margin: 0;
+
+    font-size: 15px;
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .noticias-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .noticias {
+
+        padding:
+            55px 15px;
+
+        background-attachment:
+            scroll;
+
+    }
+
+
+    .noticias-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .noticia-imagen {
+
+        height: 230px;
+
+    }
+
+
+    .noticias-header h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .noticias-header p {
+
+        font-size: 15px;
+
+    }
+
+
+    .noticias-final {
+
+        flex-direction:
+            column;
+
+        gap: 5px;
+
+    }
+
 }
