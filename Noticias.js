@@ -4,39 +4,41 @@ fetch("Noticias.json")
 
     const contenedor = document.getElementById("contenedor-noticias");
 
-    contenedor.innerHTML = '<div class="noticias-grid"></div>';
+    contenedor.innerHTML = `
+      <div class="noticias-grid"></div>
+    `;
 
     const grid = document.querySelector(".noticias-grid");
 
     data.forEach(noticia => {
 
       grid.innerHTML += `
+        <article class="noticia">
 
-      <article class="noticia">
+          <div class="noticia-imagen">
+            <img src="${noticia.imagen}" alt="${noticia.titulo}">
+            <span class="categoria">${noticia.categoria}</span>
+          </div>
 
           <div class="noticia-contenido">
 
-              <div class="fecha">
-                  ${noticia.fuente}
-              </div>
+            <span class="fecha">
+              ${noticia.fuente}
+            </span>
 
-              <h2>${noticia.titulo}</h2>
+            <h2>${noticia.titulo}</h2>
 
-              <p>${noticia.descripcion}</p>
+            <p>${noticia.descripcion}</p>
 
-              <a
-                  href="${noticia.url}"
-                  target="_blank"
-                  class="leer-mas"
-              >
-                  Leer noticia
-                  <span>→</span>
-              </a>
+            <a href="${noticia.url}"
+               target="_blank"
+               class="leer-mas">
+               Leer noticia <span>→</span>
+            </a>
 
           </div>
 
-      </article>
-
+        </article>
       `;
 
     });
